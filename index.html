@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Smythe&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Restaurant App</title>
+    
+    <header class="header">
+            <h1 class="heading">Jimmy’s Diner</h1>
+            <h2 class="subheading">The best burgers and pizzas in town.</h2>
+    </header>
+    <main>
+
+        <section class="product-menu">
+            <div class="container">
+                <div  id="menu-container" class="menu-container">
+                   <!-- Menu items here -->
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="order">
+            <div class="container">
+                <div id="order-confirmation-message" class="order-confirmation hidden ">
+                    Thanks, James! Your order is on its way!
+                </div>
+
+                <div id="order-details" class="order-details hidden">
+                    <h2 class="font-size-28">Your Order</h2>
+
+                    <div id="order-items" class="order-items">
+                    
+                        <!-- order-items here -->
+
+                    </div>
+
+                    <div class="total">
+                        <p class="font-size-28">Total price:</p>
+                        <p id="total-price" class="price">$26</p>
+                    </div>
+
+                    <button id="complete-order-btn" class="complete-order-btn green-btn">Complete order</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="modal-section" class="modal hidden">
+            <div class="container">
+                    <div class="modal-form ">
+                        
+                        <form action="#" id="payment-form" name="paymentForm">
+                            <p class="card-details-form-header">Enter card details</p>
+                            <input class="input-field" id="user-full-name-input" type="text" name="fullName" autocomplete="name"  maxlength="50" placeholder="John Doe" aria-label="Your full name" required>
+                            <input class="input-field" id="user-card-number-input" type="text" name="cardNumber" maxlength="19" inputmode="numeric" placeholder="1234 5678 9012 3456" aria-label="Your card number" required>
+                            <input class="input-field" id="user-cvv-input" type="password" name="cvv" maxlength="3" inputmode="numeric" placeholder="123" aria-label="Your CVV code" pattern="[0-9]{3}" required>
+                            <button class="pay-btn green-btn">Pay</button>
+                        </form>
+                    </div>
+                    
+                
+            </div>
+        </section>
+
+    </main>
+    
+</head>
+<body>
+
+
+
+
+    <script src="./scripts/index.js" type="module"></script>
+</body>
+</html>
