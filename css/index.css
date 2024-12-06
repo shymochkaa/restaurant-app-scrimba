@@ -9,20 +9,27 @@ body {
 h1,
 h2 {
   font-weight: 400;
+  
+  
+  
 }
 .heading {
+  position: absolute;
+  top: 45px;
+  left: 45px;
   font-size: 2.438rem;
-
   color: #ffffff;
   margin: 0;
-  padding: 45px 45px 0px 45px;
 }
 
 .subheading {
+  position: absolute;
+  top: 90px;
+  left: 45px;
   font-size: 1.401rem;
   color: #ffffff;
   margin: 0;
-  padding: 0px 45px 0px 45px;
+
 }
 
 .emoji {
@@ -62,11 +69,15 @@ h2 {
 /* Layout */
 
 .header {
+  position: relative;
   width: 600px;
   margin: 0 auto;
   height: 167px;
-  background-image: url('./images/header-bg-img.png');
   box-sizing: cover;
+}
+
+.header-img {
+    width: 100%;
 }
 .container {
   width: 508px;
