@@ -65,7 +65,7 @@ h2 {
   width: 600px;
   margin: 0 auto;
   height: 167px;
-  background-image: url('images/header-bg-img.png');
+  background-image: url('./images/header-bg-img.png');
   box-sizing: cover;
 }
 .container {
