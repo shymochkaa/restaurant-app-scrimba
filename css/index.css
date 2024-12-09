@@ -9,9 +9,6 @@ body {
 h1,
 h2 {
   font-weight: 400;
-  
-  
-  
 }
 .heading {
   position: absolute;
@@ -29,7 +26,6 @@ h2 {
   font-size: 1.401rem;
   color: #ffffff;
   margin: 0;
-
 }
 
 .emoji {
@@ -77,7 +73,7 @@ h2 {
 }
 
 .header-img {
-    width: 100%;
+  width: 100%;
 }
 .container {
   width: 508px;
@@ -111,7 +107,6 @@ h2 {
 }
 
 .add-to-order-btn {
-  
   font-weight: 200;
   cursor: pointer;
   color: #3c3c3c;
